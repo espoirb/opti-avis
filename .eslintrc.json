@@ -1,0 +1,26 @@
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "@typescript-eslint/no-unused-vars": ["warn", { 
+      "argsIgnorePattern": "^_",
+      "varsIgnorePattern": "^_",
+      "ignoreRestSiblings": true,
+      "vars": "all",
+      "args": "after-used",
+      "ignorePattern": "^referralUrl$"
+    }],
+    "@typescript-eslint/no-explicit-any": "warn",
+    "react-hooks/exhaustive-deps": ["warn", {
+      "enableDangerousAutofixThisMayCauseInfiniteLoops": true
+    }],
+    "react/no-unescaped-entities": ["error", {
+      "forbid": [{
+        "char": ">",
+        "alternatives": ["&gt;"]
+      }, {
+        "char": "}",
+        "alternatives": ["&#125;"]
+      }]
+    }]
+  }
+} 
