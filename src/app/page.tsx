@@ -116,7 +116,7 @@ export default function Home() {
               onClick={e => e.stopPropagation()}
             >
               <div className="flex justify-between items-center mb-4">
-                <h2 className="text-xl font-semibold">About OPTI-AVIS</h2>
+                <h2 className="text-xl font-semibold text-black">About OPTI-AVIS</h2>
                 <button 
                   onClick={() => setShowInfo(false)}
                   className="p-1 hover:bg-gray-100 rounded-full"
@@ -134,21 +134,21 @@ export default function Home() {
                   <div className="space-y-2">
                     <div className="flex items-center gap-2">
                       <Target className="w-4 h-4 text-blue-600" />
-                      <span className="font-medium">Smart Matching</span>
+                      <span className="font-medium text-black">Smart Matching</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <Clock className="w-4 h-4 text-blue-600" />
-                      <span className="font-medium">Deadline Tracking</span>
+                      <span className="font-medium text-black">Deadline Tracking</span>
                     </div>
                   </div>
                   <div className="space-y-2">
                     <div className="flex items-center gap-2">
                       <CheckSquare className="w-4 h-4 text-blue-600" />
-                      <span className="font-medium">Compliance Check</span>
+                      <span className="font-medium text-black">Compliance Check</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <Building2 className="w-4 h-4 text-blue-600" />
-                      <span className="font-medium">Business Profile</span>
+                      <span className="font-medium text-black">Business Profile</span>
                     </div>
                   </div>
                 </div>
